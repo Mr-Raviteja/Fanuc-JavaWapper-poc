@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="focus-lib">
+    <CLASSES />
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$PROJECT_DIR$/lib/FOCAS2 Library" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>

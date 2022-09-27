@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.clients</groupId>
+    <artifactId>clientmachine</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.sun.jna/jna -->
+        <dependency>
+            <groupId>com.sun.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>3.0.9</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.sun/jna -->
+        <!--<dependency>-->
+        <!--<groupId>com.sun</groupId>-->
+        <!--<artifactId>jna</artifactId>-->
+        <!--<version>4.1.0</version>-->
+        <!--<dependency>-->
+        <!--<groupId>com.my</groupId>-->
+        <!--<artifactId>fwlib</artifactId>-->
+        <!--<version>64</version>-->
+        <!--<type>zip</type>-->
+        <!--</dependency>-->
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.googlecode.mavennatives</groupId>
+                <artifactId>maven-nativedependencies-plugin</artifactId>
+                <version>0.0.7</version>
+                <executions>
+                    <execution>
+                        <id>unpacknatives</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--<plugin>-->
+            <!--<groupId>org.apache.maven.plugins</groupId>-->
+            <!--<artifactId>maven-dependency-plugin</artifactId>-->
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<id>unpack</id>-->
+            <!--<phase>compile</phase>-->
+            <!--<goals>-->
+            <!--<goal>unpack</goal>-->
+            <!--</goals>-->
+            <!--<configuration>-->
+            <!--<artifactItems>-->
+            <!--<artifactItem>-->
+            <!--<groupId>com.my</groupId>-->
+            <!--<artifactId>fwlib</artifactId>-->
+            <!--<version>64</version>-->
+            <!--<type>dll</type>-->
+            <!--<overWrite>true</overWrite>-->
+            <!--<outputDirectory>${project.build.directory}/lib</outputDirectory>-->
+            <!--</artifactItem>-->
+            <!--</artifactItems>-->
+            <!--</configuration>-->
+            <!--</execution>-->
+            <!--</executions>-->
+            <!--</plugin>-->
+        </plugins>
+    </build>
+</project>
